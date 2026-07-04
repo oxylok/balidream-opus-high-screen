@@ -27,76 +27,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Work+Sans:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
 
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          ink: '#024756',
-          accent: {
-            DEFAULT: '#C2453A',
-            bright: '#F05A59',
-            dark: '#9E362D'
-          },
-          surface: {
-            alt: '#F2F5FA'
-          },
-          gold: '#C8821E'
-        },
-        fontFamily: {
-          serif: ['"Playfair Display"', 'serif'],
-          sans: ['"Work Sans"', 'sans-serif'],
-          script: ['"Yellowtail"', 'cursive']
-        },
-        maxWidth: {
-          'container-l': '80rem',
-          'container-m': '52rem'
-        }
-      }
-    }
-  }
-</script>
-
-<style type="text/tailwindcss">
-  @layer base {
-    html { scroll-behavior: smooth; }
-    body { @apply font-sans text-ink antialiased; }
-    h1, h2, h3 { @apply font-serif font-normal; }
-    :focus-visible { outline: 2px solid #C2453A; outline-offset: 2px; }
-  }
-  @layer components {
-    .padding-global { @apply px-6 md:px-10 lg:px-16; }
-    .container-large { @apply mx-auto w-full max-w-container-l; }
-    .container-medium { @apply mx-auto w-full max-w-container-m; }
-    .padding-section-large { @apply py-16 md:py-24 lg:py-28; }
-    .padding-section-medium { @apply py-10 md:py-16 lg:py-20; }
-
-    .heading-style-h1 { @apply font-serif text-4xl sm:text-5xl lg:text-[3.75rem] leading-[1.1]; }
-    .heading-style-h2 { @apply font-serif text-3xl sm:text-4xl leading-tight; }
-    .heading-style-h3 { @apply font-serif text-xl sm:text-2xl leading-snug; }
-
-    .text-style-eyebrow { @apply block text-accent font-semibold uppercase tracking-[0.18em] text-xs sm:text-sm mb-3; }
-
-    .button {
-      @apply inline-flex items-center justify-center gap-2 border border-accent text-accent font-semibold uppercase tracking-wider text-xs sm:text-sm px-7 py-3.5 sm:px-8 sm:py-4 transition-colors duration-200 hover:bg-accent hover:text-white;
-    }
-    .button.is-solid {
-      @apply bg-accent text-white border-accent hover:bg-accent-dark hover:border-accent-dark;
-    }
-
-    .list-style-dash { @apply pl-5 relative; }
-    .list-style-dash::before { content: "\2014"; @apply absolute left-0 text-accent; }
-
-    .slider-track { scrollbar-width: none; -ms-overflow-style: none; scroll-snap-type: x mandatory; }
-    .slider-track::-webkit-scrollbar { display: none; }
-    .slider-card { scroll-snap-align: start; }
-
-    .nav-link { @apply text-sm font-medium tracking-wide transition-colors; }
-
-    .field-underline { @apply w-full border-0 border-b border-ink/20 bg-transparent py-2 text-ink focus:border-accent focus:ring-0; }
-  }
-</style>
+<link rel="preload" as="image" href="./assets/img/hero.jpg">
+<link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="page-wrapper bg-white">
 
